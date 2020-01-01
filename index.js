@@ -3,7 +3,7 @@ import _ from 'lodash'
 
 const MathUtils = {
 	map: (x, a, b, c, d) => (x - a) * (d - c) / (b - a) + c,
-	lerp: (a, b, n) => (1 - n) * a + n * b
+	lerp: (a, b, n) => (1 - n) * a + n * b //a + n(b-a)
 }
 const body = $('body')
 
